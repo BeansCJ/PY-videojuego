@@ -10,6 +10,7 @@ pantalla = pygame.display.set_mode((ANCHO, ALTO))
 pygame.display.set_caption("PY VIDEOJUEGO")
 reloj = pygame.time.Clock()
 
+# Coloca rocket.png en esta misma carpeta.
 jugador = pygame.image.load("rocket.png").convert_alpha()
 jugador_x = (ANCHO - jugador.get_width()) // 2
 jugador_y = (ALTO - jugador.get_height()) // 2
@@ -30,6 +31,7 @@ while jugando:
     if teclas[pygame.K_s]:
         jugador_y += VELOCIDAD
 
+    # Mantiene la nave dentro de la ventana.
     jugador_x = max(0, min(jugador_x, ANCHO - jugador.get_width()))
     jugador_y = max(0, min(jugador_y, ALTO - jugador.get_height()))
 
@@ -39,3 +41,4 @@ while jugando:
     reloj.tick(60)
 
 pygame.quit()
+

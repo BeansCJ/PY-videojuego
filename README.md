@@ -1,16 +1,26 @@
 # PY VIDEOJUEGO
 
-Videojuego básico en Python con Pygame. Controla una sola nave con W, A, S y D.
+Videojuego básico en Python con Pygame. Controla una nave con W, A, S y D.
 
 ## Archivos
 
 - `juego.py`: código del videojuego.
-- `rocket.png`: imagen de la nave, necesaria en la misma carpeta que `juego.py`.
+- `rocket.png`: imagen de la nave (colócala en esta misma carpeta).
 
 ## Cómo ejecutarlo
 
 1. Instala Python.
-2. Instala Pygame con `python -m pip install pygame`.
-3. Ejecuta `python juego.py` desde la carpeta del proyecto.
+2. Abre una terminal en esta carpeta e instala Pygame:
 
-La nave se mantiene dentro de los límites de la ventana. Cierra la ventana para salir.
+   ```bash
+   python -m pip install pygame
+   ```
+
+3. Ejecuta el juego:
+
+   ```bash
+   python juego.py
+   ```
+
+La nave no puede salir de los límites de la ventana. Cierra la ventana para terminar.
+
